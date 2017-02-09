@@ -1,0 +1,14 @@
+{
+	"plugins": ["prism", "-highlight"],
+	"title":"LinkDood",
+	"links":{
+		"sharing":{
+			"facebook":false,
+			"twitter":false,
+			"google":false,
+			"weibo":true
+		}
+	}
+		
+	
+}
