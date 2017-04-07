@@ -7,10 +7,13 @@ SDK 包的libs文件夹中，包含了北信源Linkdood SDK的 jar 文件，各 
 ```java
 	libs
 	├── armeabi
-	│   ├── libimsdkapi.so
+	│   ├── libjniVimServicePresets.so 
+	│   ├── liblddplugin.so	
 	├── armeabi-v7a
-	│   ├── libimsdkapi.so
-	└── VIMSdk-version.jar
+	│   ├── libjniVimServicePresets.so
+	│   ├── liblddplugin.so
+	└── vimsdk-version.jar
+	└── javacpp.jar
 ```
 
 以上文件列表中，imsdk-version.jar (版本号可能会不同)为Linkdood SDK，子目录中的文件是 SDK 所依赖的各个 CPU 架构的 so 库。
