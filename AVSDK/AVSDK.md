@@ -332,6 +332,7 @@ sdp参数设置
 ```
 
 #时序图
+![](./SDKtiming.png)
 
 #AVSDK接口与功能
 
