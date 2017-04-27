@@ -46,4 +46,4 @@
 	* [主接口文件](AVSDK/AVSDK.md#主接口文件)
 	* [回调接口](AVSDK/AVSDK.md#回调接口)
     * [时序图](AVSDK/AVSDK.md#时序图)
-  	
+  	* [AVSDK接口与功能](AVSDK/AVSDK.md)
