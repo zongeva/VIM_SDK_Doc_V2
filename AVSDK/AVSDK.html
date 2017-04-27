@@ -938,7 +938,41 @@ sdp&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
 
 
 </code></pre>
-
+<h1 id="&#x65F6;&#x5E8F;&#x56FE;">&#x65F6;&#x5E8F;&#x56FE;</h1><p><img src="SDKtiming.png"></p><h1 id="avsdk&#x63A5;&#x53E3;&#x4E0E;&#x529F;&#x80FD;">AVSDK&#x63A5;&#x53E3;&#x4E0E;&#x529F;&#x80FD;</h1><p>void SetAVParam(const AVParam param);</p><h5 id="&#x529F;&#x80FD;&#xFF1A;&#x8BBE;&#x7F6E;avsdk&#x7684;&#x53C2;&#x6570;">&#x529F;&#x80FD;&#xFF1A;&#x8BBE;&#x7F6E;AVSDK&#x7684;&#x53C2;&#x6570;</h5><ul><li>paramLocalRender        &#x672C;&#x5730;SurfaceView
+</li>
+<li>paramRemoteRender        &#x8FDC;&#x7AEF;SurfaceView
+</li>
+<li>paramLocalLayout        
+</li>
+<li>paramRemoteLayout        
+</li>
+<li>paramActivity            
+</li>
+<li>paramIceServer        &#x6253;&#x6D1E;&#x670D;&#x52A1;&#x5668;ip
+</li>
+<li>paramIcePort            &#x6253;&#x6D1E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;
+</li>
+<li>paramIceUser            &#x6253;&#x6D1E;&#x670D;&#x52A1;&#x5668;&#x7528;&#x6237;&#x540D;
+</li>
+<li>paramIcePwd            &#x6253;&#x6D1E;&#x670D;&#x52A1;&#x5668;&#x5BC6;&#x7801;
+</li>
+<li>paramOpenAudio        &#x662F;&#x5426;&#x6253;&#x5F00;&#x97F3;&#x9891;
+</li>
+<li>paramOpenVideo        &#x662F;&#x5426;&#x6253;&#x5F00;&#x89C6;&#x9891;
+</li></ul>
+<p>int RegisterUserCallBack(UserCallBack ulistener)
+<br>&#x529F;&#x80FD;&#xFF1A;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#x51FD;&#x6570;</p><p>int CreateOffer();
+<br>&#x529F;&#x80FD;&#xFF1A;&#x4E3B;&#x53EB;&#x7AEF;&#x5411;&#x88AB;&#x53EB;&#x7AEF;&#x53D1;&#x8D77;&#x97F3;&#x89C6;&#x9891;&#x901A;&#x8BDD;&#x8BF7;&#x6C42;&#xFF0C;&#x751F;&#x6210;SDP</p><p>int CreateAnswer();
+<br>&#x529F;&#x80FD;&#xFF1A;&#x88AB;&#x53EB;&#x7AEF;&#x63A5;&#x6536;&#x5230;&#x4E3B;&#x53EB;&#x7AEF;&#x7684;SDP&#xFF0C;&#x505A;&#x51FA;&#x54CD;&#x5E94;&#x5E76;&#x751F;&#x6210;SDP</p><p>int SetRemoteDescription(String sdp);
+<br>&#x529F;&#x80FD;&#xFF1A;&#x4E3B;&#x53EB;&#x7AEF;&#x63A5;&#x6536;&#x5230;&#x88AB;&#x53EB;&#x7AEF;&#x7684;SDP&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;</p><p>void Destroy();
+<br>&#x529F;&#x80FD;&#xFF1A;&#x91CA;&#x653E;webRTC&#x8D44;&#x6E90;&#xFF0C;&#x5728;&#x7ED3;&#x675F;&#x901A;&#x8BDD;&#x65F6;&#x4F7F;&#x7528;</p><p>void SwitchCamera(bool enable);
+<br>&#x529F;&#x80FD;&#xFF1A;&#x5207;&#x6362;&#x6444;&#x50CF;&#x5934;</p><p>void SetMicrophone(boolean isEnableMic)
+<br>&#x529F;&#x80FD;&#xFF1A;&#x9759;&#x97F3;</p><p>void SetSpeaker(boolean isEnableSpeaker)
+<br>&#x529F;&#x80FD;&#xFF1A;&#x542C;&#x7B52;&#x5916;&#x97F3;&#x5207;&#x6362;</p><h1 id="&#x56DE;&#x8C03;">&#x56DE;&#x8C03;</h1><p>void onIceGatheringComplete(String sdp);
+<br>&#x529F;&#x80FD;&#xFF1A;AVSDK&#x5C06;&#x751F;&#x6210;&#x7684;SDP&#x56DE;&#x8C03;&#x7ED9;&#x5E94;&#x7528;&#x5C42;</p><p>void onIceConnected();
+<br>&#x529F;&#x80FD;&#xFF1A;&#x8FDE;&#x63A5;&#x6210;&#x529F;</p><p>void onIceDisconnected();
+<br>&#x529F;&#x80FD;&#xFF1A;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;</p><p>void onPeerConnectionError(String description);
+<br>&#x529F;&#x80FD;&#xFF1A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;e</p>
                                 
                                 </section>
                             
@@ -981,7 +1015,7 @@ sdp&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AVSDK概述","level":"1.6","depth":1,"next":{"title":"AVSDK功能","level":"1.7","depth":1,"anchor":"#AVSDK功能","path":"AVSDK/AVSDK.md","ref":"AVSDK/AVSDK.md#AVSDK功能","articles":[]},"previous":{"title":"基础消息功能","level":"1.5.3","depth":2,"path":"PC/basic.md","ref":"PC/basic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LinkDood","links":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true}},"gitbook":"*"},"file":{"path":"AVSDK/AVSDK.md","mtime":"2017-02-09T02:14:23.359Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-02-09T03:15:50.348Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AVSDK概述","level":"1.6","depth":1,"next":{"title":"AVSDK功能","level":"1.7","depth":1,"anchor":"#AVSDK功能","path":"AVSDK/AVSDK.md","ref":"AVSDK/AVSDK.md#AVSDK功能","articles":[]},"previous":{"title":"基础消息功能","level":"1.5.3","depth":2,"path":"PC/basic.md","ref":"PC/basic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LinkDood","links":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true}},"gitbook":"*"},"file":{"path":"AVSDK/AVSDK.md","mtime":"2017-04-27T09:28:14.569Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-04-27T09:30:53.548Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
