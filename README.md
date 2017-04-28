@@ -47,7 +47,7 @@
 
 |  ![](images/ios_logo.png) |  ![](images/android_logo.png)|  ![](images/PC_logo.png) |
 | :-----:  | :-----:| :-----: | 
-|  [iOS SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)    |   [Android SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)    |    [PC SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)      |
+|  [iOS SDK下载](https://pan.baidu.com/s/1kUSrB6J?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0)    |   [Android SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)    |    [PC SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)      |
 
 
  
