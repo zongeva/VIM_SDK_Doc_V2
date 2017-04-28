@@ -36,14 +36,10 @@
 	 * [接口调用示例](PC/describe.md#接口调用示例)
 	 * [基础消息功能](PC/basic.md)
 
-* [AVSDK概述](AVSDK/AVSDK.md)
-
-* [AVSDK功能](AVSDK/AVSDK.md#AVSDK功能)
-
-* [AVSDK-接口介绍及说明](AVSDK/AVSDK.md#AVSDK-接口介绍及说明)
-	* [AVSDK使用流程](AVSDK/AVSDK.md#AVSDK使用流程)
-	* [AVSDK头文件](AVSDK/AVSDK.md#AVSDK头文件)
-	* [主接口文件](AVSDK/AVSDK.md#主接口文件)
-	* [回调接口](AVSDK/AVSDK.md#回调接口)
-    * [时序图](AVSDK/AVSDK.md#时序图)
-  	* [AVSDK接口与功能](AVSDK/AVSDK.md)
+* [AVSDK开发指南](AVSDK/AVSDK.md)
+     * [AVSDK概述](AVSDK/AVSDK.md#AVSDK概述)
+	 * [AVSDK功能](AVSDK/AVSDK.md#AVSDK功能)
+ 	 * [时序图](AVSDK/AVSDK.md#时序图)
+	 * [AVSDK接口与功能](AVSDK/AVSDK.md#AVSDK接口与功能)
+	 * [回调](AVSDK/AVSDK.md#回调)
+  	
