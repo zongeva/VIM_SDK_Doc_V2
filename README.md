@@ -47,7 +47,7 @@
 
 |  ![](images/ios_logo.png) |  ![](images/android_logo.png)|  ![](images/PC_logo.png) |
 | :-----:  | :-----:| :-----: | 
-|  [iOS SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)    |   [Android SDK下载](https://raw.githubusercontent.com/VRVIM/VIM_Android_SDK_V2/master/release_libs.zip)    |    [PC SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)      |
+|  [iOS SDK下载](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)    |   [Android SDK下载](https://raw.githubusercontent.com/VRVIM/VIM_Android_SDK_V2/master/release_libs.zip)    |    [PC SDK下载](http://vrv.linkdood.cn/predownload/Linkdood_V1.2.23.exe)      |
 
 
  
