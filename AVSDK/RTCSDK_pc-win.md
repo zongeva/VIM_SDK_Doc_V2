@@ -1,4 +1,4 @@
-#RTCSDK(pc-win) ver0.1.0.9 
+#RTCSDK_pc-win ver0.1.0.9 
 ##2017-04-28
 
 ##1.RTCSDK简介
