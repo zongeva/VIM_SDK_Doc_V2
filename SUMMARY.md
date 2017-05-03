@@ -37,9 +37,9 @@
 	 * [基础消息功能](PC/basic.md)
 
 * [AVSDK开发指南](AVSDK/AVSDK.md)
-     * [AVSDK概述](AVSDK/AVSDK.md#AVSDK概述)
+	 * [AVSDK概述](AVSDK/AVSDK.md#AVSDK概述)
 	 * [AVSDK功能](AVSDK/AVSDK.md#AVSDK功能)
- 	 * [时序图](AVSDK/AVSDK.md#时序图)
+	 * [时序图](AVSDK/AVSDK.md#时序图)
 	 * [AVSDK接口与功能](AVSDK/AVSDK.md#AVSDK接口与功能)
 	 * [回调](AVSDK/AVSDK.md#回调)
 * [RTCSDK(iOS)开发指南](AVSDK/RTCSDK_IOS.md)

@@ -1,5 +1,5 @@
 
-#RTCSDK(iOS)
+#RTCSDK_iOS
 
 ##1. RTCSDK简介
 ###1.1 描述
