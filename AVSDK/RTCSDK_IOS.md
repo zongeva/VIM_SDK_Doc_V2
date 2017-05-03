@@ -199,22 +199,23 @@ A与B两点之间音视频会话的建立如图2所示。其中A是主叫，B是
 打开/关闭话筒, 默认外音（如果有蓝牙就切换到蓝牙）,设置为NO:开启听筒(蓝牙)，注意这里有蓝牙的换是切换到蓝牙等外设;
 ####3.3.6 enableSpeaker
 外音/听筒切换, 默认外音（如果有蓝牙就切换到蓝牙）,设置为NO:开启听筒(蓝牙)，注意这里有蓝牙的换是切换到蓝牙等外设;
-具体设置：</br>
-    if (!isEnableSpeaker) {</br>
-        if (self.haveAbleDevice) {</br>
-             [self switchBluetooth:YES];</br>
-             self.switchAudioState=3;</br>
-             NSLog(@"current outport 切换到蓝牙  %@",kAVSDKClientDomain);</br>
-        }else{</br>
-              [self switchEarphone:YES];</br>
-               self.switchAudioState = 1;</br>
-    NSLog(@"current outport 切换到听筒   %@",kAVSDKClientDomain);</br>
-        }</br>
-    }else{</br>
-        [self switchSpeaker:YES];</br>
-         self.switchAudioState = 2;</br>
-    NSLog(@"hosten current outport 切换到外音   %@",kAVSDKClientDomain);</br>
-    }</br>
+具体设置：
+
+    if (!isEnableSpeaker) {
+        if (self.haveAbleDevice) {
+             [self switchBluetooth:YES];
+             self.switchAudioState=3;
+             NSLog(@"current outport 切换到蓝牙  %@",kAVSDKClientDomain);
+        }else{
+              [self switchEarphone:YES];
+               self.switchAudioState = 1;
+    NSLog(@"current outport 切换到听筒   %@",kAVSDKClientDomain);
+        }
+    }else{
+        [self switchSpeaker:YES];
+         self.switchAudioState = 2;
+    NSLog(@"hosten current outport 切换到外音%@",kAVSDKClientDomain);
+    }
 
 ####3.3.7 getStatsWithBlockWithID
 获取当前音视频数据，该接口是根据sessionID单条获取，以字典(键固定)方式返回

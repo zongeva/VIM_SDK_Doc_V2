@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>通讯录 · LinkDood</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>通讯录 · LinkDood</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -870,57 +870,111 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x901A;&#x8BAF;&#x5F55;">&#x901A;&#x8BAF;&#x5F55;</h2><pre class="language-"><code class="lang-java">ContactService contactService <span class="token operator">=</span>  ClientManager<span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getContactService</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<h3 id="&#x540C;&#x6B65;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x5217;&#x8868;">&#x540C;&#x6B65;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x5217;&#x8868;</h3><pre class="language-"><code class="lang-java">List<span class="token operator">&lt;</span>Contact<span class="token operator">&gt;</span> contactList <span class="token operator">=</span> contactService<span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x6839;&#x636E;&#x7528;&#x6237;id&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x4FE1;&#x606F;">&#x6839;&#x636E;&#x7528;&#x6237;id&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x4FE1;&#x606F;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID)
-</li></ul>
-<pre class="language-"><code class="lang-java">Contact contact <span class="token operator">=</span> contactService<span class="token punctuation">.</span><span class="token function">findItemByID</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x6DFB;&#x52A0;&#x8054;&#x7CFB;&#x4EBA;">&#x6DFB;&#x52A0;&#x8054;&#x7CFB;&#x4EBA;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x5907;&#x6CE8;&#xFF0C;&#x9A8C;&#x8BC1;&#x4FE1;&#x606F;&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> String remark<span class="token punctuation">,</span> String info<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getVerifyType</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>ContactVerifyType<span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x5220;&#x9664;&#x8054;&#x7CFB;&#x4EBA;">&#x5220;&#x9664;&#x8054;&#x7CFB;&#x4EBA;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x66F4;&#x65B0;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x661F;&#x6807;v&#x6807;&#x5907;&#x6CE8;&#xFF09;">&#x66F4;&#x65B0;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x661F;&#x6807;&amp;V&#x6807;&amp;&#x5907;&#x6CE8;&#xFF09;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;contact&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">updateInfo</span><span class="token punctuation">(</span>Contact info<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;">&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x804A;&#x5929;&#x80CC;&#x666F;&#x8DEF;&#x5F84;&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span>  String imgPath<span class="token punctuation">,</span>  ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;">&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x804A;&#x5929;&#x80CC;&#x666F;&#x8DEF;&#x5F84;&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span>  String imgPath<span class="token punctuation">,</span>  ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x5728;&#x7EBF;&#x72B6;&#x6001;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x5728;&#x7EBF;&#x72B6;&#x6001;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;users &#x8054;&#x7CFB;&#x4EBA;&#x96C6;&#x5408; &#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x5219;&#x67E5;&#x6240;&#x6709;&#x8054;&#x7CFB;&#x4EBA;&#x72B6;&#x6001;&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getOnline</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> users<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>OnlineState<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;--&#x540C;&#x6B65;&#x63A5;&#x53E3;-">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F; ( &#x540C;&#x6B65;&#x63A5;&#x53E3; )</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getInfo</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x964C;&#x751F;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#xFF09;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;/&#x964C;&#x751F;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#xFF09;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x56DE;&#x8C03;)
-</li></ul>
-<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getInfo</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>Contact<span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x5224;&#x65AD;&#x8054;&#x7CFB;&#x4EBA;&#x4E0E;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x662F;&#x597D;&#x53CB;&#x5173;&#x7CFB;--&#x540C;&#x6B65;&#x63A5;&#x53E3;-">&#x5224;&#x65AD;&#x8054;&#x7CFB;&#x4EBA;&#x4E0E;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x662F;&#x597D;&#x53CB;&#x5173;&#x7CFB; ( &#x540C;&#x6B65;&#x63A5;&#x53E3; )</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id)
-</li></ul>
-<pre class="language-"><code class="lang-java">  <span class="token keyword">boolean</span>  isBuddy<span class="token operator">=</span>contactService<span class="token punctuation">.</span><span class="token function">isBuddy</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x9ED1;&#x540D;&#x5355;">&#x83B7;&#x53D6;&#x9ED1;&#x540D;&#x5355;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x9ED1;&#x540D;&#x5355;&#x5217;&#x8868;)
-</li></ul>
-<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">getBlackList</span><span class="token punctuation">(</span>ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x6DFB;&#x52A0;&#x9ED1;&#x540D;&#x5355;">&#x6DFB;&#x52A0;&#x9ED1;&#x540D;&#x5355;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x52A0;&#x5165;&#x7684;&#x9ED1;&#x540D;&#x5355;&#x5BF9;&#x8C61;ID&#x96C6;&#x5408; &#xFF0C;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x6DFB;&#x52A0;&#x662F;&#x5426;&#x6210;&#x529F;)
-</li></ul>
-<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">addBlackList</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> ids<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x5220;&#x9664;&#x9ED1;&#x540D;&#x5355;">&#x5220;&#x9664;&#x9ED1;&#x540D;&#x5355;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x5220;&#x9664;&#x7684;&#x9ED1;&#x540D;&#x5355;&#x5BF9;&#x8C61;ID&#x96C6;&#x5408;&#xFF0C;&#x4E3A;&#x7A7A;&#x5219;&#x5220;&#x9664;&#x6240;&#x6709;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x6237; &#xFF0C;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x662F;&#x5426;&#x79FB;&#x9664;&#x6210;&#x529F;)
-</li></ul>
-<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">removeBlackList</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> ids<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x6839;&#x636E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x62D3;&#x5C55;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;">&#x6839;&#x636E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x62D3;&#x5C55;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x7A7A;&#x65F6;&#x4EE3;&#x8868;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x7A7A;&#x5219;&#x5220;&#x9664;&#x6240;&#x6709;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x6237; &#xFF0C;&#x56DE;&#x8C03; &#x67E5;&#x8BE2;&#x4FE1;&#x606F;)
-</li></ul>
-<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">queryExtendedField</span><span class="token punctuation">(</span>String dicKey<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>EnterpriseDictionary<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span></code></pre>
-<h3 id="&#x4E0A;&#x4F20;&#x901A;&#x8BAF;&#x5F55;">&#x4E0A;&#x4F20;&#x901A;&#x8BAF;&#x5F55;</h3><ul><li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x4E0A;&#x4F20;&#x5BF9;&#x8C61;&#x96C6;&#x5408; &#xFF0C;&#x56DE;&#x8C03; &#x63A8;&#x8350;&#x8054;&#x7CFB;&#x4EBA;)
-</li></ul>
-<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">postContact</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>PhoneBookContact<span class="token operator">&gt;</span> contacts<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>RecommendContact<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x66F4;&#x65B0;-&#x76D1;&#x542C;">&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x66F4;&#x65B0; &#x76D1;&#x542C;</h3><pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">observeOnlineListener</span><span class="token punctuation">(</span>OnlineStateListener listener<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <h2 id="&#x901A;&#x8BAF;&#x5F55;">&#x901A;&#x8BAF;&#x5F55;</h2>
+<pre class="language-"><code class="lang-java">ContactService contactService <span class="token operator">=</span>  ClientManager<span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getContactService</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x540C;&#x6B65;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x5217;&#x8868;">&#x540C;&#x6B65;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x5217;&#x8868;</h3>
+<pre class="language-"><code class="lang-java">List<span class="token operator">&lt;</span>Contact<span class="token operator">&gt;</span> contactList <span class="token operator">=</span> contactService<span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x6839;&#x636E;&#x7528;&#x6237;id&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x4FE1;&#x606F;">&#x6839;&#x636E;&#x7528;&#x6237;id&#x8FD4;&#x56DE;&#x901A;&#x8BAF;&#x5F55;&#x4FE1;&#x606F;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID)</li>
+</ul>
+<pre class="language-"><code class="lang-java">Contact contact <span class="token operator">=</span> contactService<span class="token punctuation">.</span><span class="token function">findItemByID</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x6DFB;&#x52A0;&#x8054;&#x7CFB;&#x4EBA;">&#x6DFB;&#x52A0;&#x8054;&#x7CFB;&#x4EBA;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x5907;&#x6CE8;&#xFF0C;&#x9A8C;&#x8BC1;&#x4FE1;&#x606F;&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> String remark<span class="token punctuation">,</span> String info<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getVerifyType</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>ContactVerifyType<span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x8054;&#x7CFB;&#x4EBA;">&#x5220;&#x9664;&#x8054;&#x7CFB;&#x4EBA;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x597D;&#x53CB;ID&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x66F4;&#x65B0;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x661F;&#x6807;v&#x6807;&#x5907;&#x6CE8;&#xFF09;">&#x66F4;&#x65B0;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x661F;&#x6807;&amp;V&#x6807;&amp;&#x5907;&#x6CE8;&#xFF09;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;contact&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">updateInfo</span><span class="token punctuation">(</span>Contact info<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;">&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x804A;&#x5929;&#x80CC;&#x666F;&#x8DEF;&#x5F84;&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span>  String imgPath<span class="token punctuation">,</span>  ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;">&#x8BBE;&#x7F6E;&#x804A;&#x5929;&#x80CC;&#x666F;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x804A;&#x5929;&#x80CC;&#x666F;&#x8DEF;&#x5F84;&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span>  String imgPath<span class="token punctuation">,</span>  ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x5728;&#x7EBF;&#x72B6;&#x6001;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x5728;&#x7EBF;&#x72B6;&#x6001;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;users &#x8054;&#x7CFB;&#x4EBA;&#x96C6;&#x5408; &#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x5219;&#x67E5;&#x6240;&#x6709;&#x8054;&#x7CFB;&#x4EBA;&#x72B6;&#x6001;&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getOnline</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> users<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>OnlineState<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F;--&#x540C;&#x6B65;&#x63A5;&#x53E3;-">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x4FE1;&#x606F; ( &#x540C;&#x6B65;&#x63A5;&#x53E3; )</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getInfo</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;&#x964C;&#x751F;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#xFF09;">&#x83B7;&#x53D6;&#x8054;&#x7CFB;&#x4EBA;/&#x964C;&#x751F;&#x4EBA;&#x4FE1;&#x606F;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#xFF09;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id&#xFF0C;&#x56DE;&#x8C03;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">contactService<span class="token punctuation">.</span><span class="token function">getInfo</span><span class="token punctuation">(</span> <span class="token keyword">long</span> userID<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>Contact<span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5224;&#x65AD;&#x8054;&#x7CFB;&#x4EBA;&#x4E0E;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x662F;&#x597D;&#x53CB;&#x5173;&#x7CFB;--&#x540C;&#x6B65;&#x63A5;&#x53E3;-">&#x5224;&#x65AD;&#x8054;&#x7CFB;&#x4EBA;&#x4E0E;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x662F;&#x597D;&#x53CB;&#x5173;&#x7CFB; ( &#x540C;&#x6B65;&#x63A5;&#x53E3; )</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x7528;&#x6237;id)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  <span class="token keyword">boolean</span>  isBuddy<span class="token operator">=</span>contactService<span class="token punctuation">.</span><span class="token function">isBuddy</span><span class="token punctuation">(</span><span class="token keyword">long</span> userID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x9ED1;&#x540D;&#x5355;">&#x83B7;&#x53D6;&#x9ED1;&#x540D;&#x5355;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x9ED1;&#x540D;&#x5355;&#x5217;&#x8868;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">getBlackList</span><span class="token punctuation">(</span>ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x6DFB;&#x52A0;&#x9ED1;&#x540D;&#x5355;">&#x6DFB;&#x52A0;&#x9ED1;&#x540D;&#x5355;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x52A0;&#x5165;&#x7684;&#x9ED1;&#x540D;&#x5355;&#x5BF9;&#x8C61;ID&#x96C6;&#x5408; &#xFF0C;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x6DFB;&#x52A0;&#x662F;&#x5426;&#x6210;&#x529F;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">addBlackList</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> ids<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x9ED1;&#x540D;&#x5355;">&#x5220;&#x9664;&#x9ED1;&#x540D;&#x5355;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x5220;&#x9664;&#x7684;&#x9ED1;&#x540D;&#x5355;&#x5BF9;&#x8C61;ID&#x96C6;&#x5408;&#xFF0C;&#x4E3A;&#x7A7A;&#x5219;&#x5220;&#x9664;&#x6240;&#x6709;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x6237; &#xFF0C;&#x56DE;&#x8C03; &#x8FD4;&#x56DE;&#x662F;&#x5426;&#x79FB;&#x9664;&#x6210;&#x529F;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">removeBlackList</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Long<span class="token operator">&gt;</span> ids<span class="token punctuation">,</span> ResultCallBack callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x6839;&#x636E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x62D3;&#x5C55;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;">&#x6839;&#x636E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x62D3;&#x5C55;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x7A7A;&#x65F6;&#x4EE3;&#x8868;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x7A7A;&#x5219;&#x5220;&#x9664;&#x6240;&#x6709;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x6237; &#xFF0C;&#x56DE;&#x8C03; &#x67E5;&#x8BE2;&#x4FE1;&#x606F;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">queryExtendedField</span><span class="token punctuation">(</span>String dicKey<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>EnterpriseDictionary<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x4E0A;&#x4F20;&#x901A;&#x8BAF;&#x5F55;">&#x4E0A;&#x4F20;&#x901A;&#x8BAF;&#x5F55;</h3>
+<ul>
+<li>&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF1A;&#xFF08;&#x4E0A;&#x4F20;&#x5BF9;&#x8C61;&#x96C6;&#x5408; &#xFF0C;&#x56DE;&#x8C03; &#x63A8;&#x8350;&#x8054;&#x7CFB;&#x4EBA;)</li>
+</ul>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">postContact</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>PhoneBookContact<span class="token operator">&gt;</span> contacts<span class="token punctuation">,</span> ResultCallBack<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>RecommendContact<span class="token operator">&gt;</span><span class="token punctuation">,</span> Void<span class="token punctuation">,</span> Void<span class="token operator">&gt;</span> callBack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x66F4;&#x65B0;-&#x76D1;&#x542C;">&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x66F4;&#x65B0; &#x76D1;&#x542C;</h3>
+<pre class="language-"><code class="lang-java">  contactService<span class="token punctuation">.</span><span class="token function">observeOnlineListener</span><span class="token punctuation">(</span>OnlineStateListener listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -964,7 +1018,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通讯录","level":"1.4.3.3","depth":3,"next":{"title":"聊天","level":"1.4.3.4","depth":3,"path":"Android/chat.md","ref":"Android/chat.md","articles":[]},"previous":{"title":"账户管理","level":"1.4.3.2","depth":3,"anchor":"#账户管理","path":"Android/account.md","ref":"Android/account.md#账户管理","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LinkDood","links":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true}},"gitbook":"*"},"file":{"path":"Android/contact.md","mtime":"2017-05-02T10:39:49.622Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-05-03T01:55:33.902Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"通讯录","level":"1.4.3.3","depth":3,"next":{"title":"聊天","level":"1.4.3.4","depth":3,"path":"Android/chat.md","ref":"Android/chat.md","articles":[]},"previous":{"title":"账户管理","level":"1.4.3.2","depth":3,"anchor":"#账户管理","path":"Android/account.md","ref":"Android/account.md#账户管理","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LinkDood","links":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true}},"gitbook":"*"},"file":{"path":"Android/contact.md","mtime":"2017-05-03T02:09:05.274Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T02:32:31.575Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
