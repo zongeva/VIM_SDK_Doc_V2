@@ -8,10 +8,10 @@
 * 下载地址:[http://blog.liandoudou.cn/doku.php?id=wiki:sdk](http://blog.liandoudou.cn/doku.php?id=wiki:sdk)
 * 本文详细介绍关于VIMSDKDemo相关说明（android studio开发环境）
 * 项目结构如下图：
-![](../images/android_doc_01.png)
-![](../images/android_doc_02.png)
-![](../images/android_doc_03.png)
-![](../images/android_doc_04.png)
+![](../images/Android/android_doc_01.png)
+![](../images/Android/android_doc_02.png)
+![](../images/Android/android_doc_03.png)
+![](../images/Android/android_doc_04.png)
 
 **其他相关接口的调用请参看DEMO功能实现以及相关API文档**
 

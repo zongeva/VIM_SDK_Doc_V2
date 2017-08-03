@@ -43,24 +43,24 @@
 
 **如何引用**
 
-![](../images/ios_lib_07.png)
+![](../images/IOS/ios_lib_07.png)
 
 **弹出的窗口中搜索需要添加的库文件添加**
 
-![](../images/ios_lib_06.png)
+![](../images/IOS/ios_lib_06.png)
 
 **如果是添加Linkdood SDK库文件则选择弹出窗口中的Add Other按钮**
 
-![](../images/ios_lib_02.png)
+![](../images/IOS/ios_lib_02.png)
 
 **然后选择我们工程文件夹中的Linkdood SDK库文件**
 
-![](../images/ios_lib_03.png)
+![](../images/IOS/ios_lib_03.png)
 
 **引入应用SDK证书**
 
 * 将获取到的SDK证书拷贝到工程文件夹中，不限制目录。然后在工程目录Supporting Files下点击右键选择Add Files to ”工程名”，在弹出的窗口选择工程文件夹下的SDK证书文件。
-![](../images/ios_lib_04.png)
+![](../images/IOS/ios_lib_04.png)
 
 **修改编译配置项**
 
@@ -68,13 +68,13 @@
 Build Settings—>Linking—>Other Linker Flags加入-ObjC
 
 **注:相关解释说明请参看[http://blog.csdn.net/lxinl/article/details/9664807](http://blog.csdn.net/lxinl/article/details/9664807)**
-![](../images/ios_lib_05.png)
+![](../images/IOS/ios_lib_05.png)
 ###SDK的使用
 1.引入Linkdood SDK头文件#import <SDKClient/SDKClient.h>为了方便使用VIMSDKDemo是通过预编译文件PrefixHeader.pch文件引入的，开发者可参考
 
 2.注册应用
 
-![](../images/ios_crt.png)
+![](../images/IOS/ios_crt.png)
 3.其他相关接口的调用请参看DEMO功能实现以及相关API文档
 
 * 请参考文档[《IM基础功能(iOS)开发指南》](../iOS/describe.md)
